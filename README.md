@@ -400,8 +400,8 @@ start()
 ### Step 9 - Test Load Balancer 
 
 1. To visit my hello world api: <br/>
-**Option 1:** Type load balancer IP address listed below to your browser <br/>
-- **Load Balancer IP Address:** 164.90.245.229 <br/>
+* **Load Balancer IP Address:** 164.90.245.229 <br/>
+**Option 1:** Type load balancer IP address listed above to your browser <br/>
 **Option 2:** Click on the link http://164.90.245.229/ to directly access the browser <br/>
 
 2. If everything is configured correctly, clicking reload will switch between the 2 websites. 
