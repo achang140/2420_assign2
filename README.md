@@ -398,9 +398,9 @@ start()
 
 
 ### Step 9 - Test Load Balancer 
+**Load Balancer IP Address:** 164.90.245.229 <br/>
 
 1. To visit my hello world api: <br/>
-* **Load Balancer IP Address:** 164.90.245.229 <br/>
 * **Option 1:** Type load balancer IP address listed above to your browser <br/>
 * **Option 2:** Click on the link http://164.90.245.229/ to directly access the browser <br/>
 
