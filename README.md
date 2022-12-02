@@ -5,7 +5,7 @@
 
 ---
 
-**Load Balancer IP Address:** 164.90.245.229 
+**Load Balancer IP Address:** 164.90.245.229 <br/>
 Visit my hello world api: http://164.90.245.229/ 
 
 ---
@@ -22,7 +22,7 @@ Visit my hello world api: http://164.90.245.229/
 6. Name the VPC "vpc-2420"
 7. Click **Create VPC Network** 
 
-Your VPC is currently "No resources" 
+* Your VPC is currently "No resources" 
 ![VPC Image](./images/Step1-VPC.png)
 
 ### Create Two Droplets 
@@ -46,10 +46,10 @@ Your VPC is currently "No resources"
 6. Select **web** tag for Connect Droplets 
 7. Click **Create Load Balancer** 
 
-Your load balancer currently has no Healthy Droplets 
+* Your load balancer currently has no Healthy Droplets 
 ![Load Balancer](./images/Step1-LoadBalancer.png)
 
-Note: Instead of visiting the IP address of the droplets, visit IP address of the load balancer, sfo3-load-balancer-01. 
+Note: Instead of visiting the IP address of the droplets, you will visit IP address of the load balancer, sfo3-load-balancer-01. 
 
 ### Create Firewall 
 1. Click **Networking** 
@@ -96,8 +96,8 @@ Note: Instead of visiting the IP address of the droplets, visit IP address of th
 1. `wget https://github.com/caddyserver/caddy/releases/download/v2.6.2/caddy_2.6.2_linux_amd64.tar.gz`
 2. `tar xvf caddy_2.6.2_linux_amd64.tar.gz` to unarchive the tar.gz file to get an executable caddy file  
 3. `ls` 
-* You should see the following: LICENSE  README.md  caddy  caddy_2.6.2_linux_amd64.tar.gz
-4. `sudo cp caddy /usr/bin` to copy the caddy file to *bin* directory 
+* You should see the following: **LICENSE  README.md  caddy  caddy_2.6.2_linux_amd64.tar.gz**
+4. `sudo cp caddy /usr/bin` to copy the caddy file to the **bin** directory 
 5. `sudo chown root:root /usr/bin/caddy`to change the caddy file's permission to root 
 
 ![Caddy Installation Server 1](./images/Step3-Caddy1.png)
@@ -142,8 +142,8 @@ Note: Instead of visiting the IP address of the droplets, visit IP address of th
 ![npm i fastify](./images/Step4-npm-fastify.png)
 
 * Your **src** directory will have the following: 
-* Note: Create a `.gitignore` file to prevent node_modules from git push to GitHub 
 ![ls src](./images/Step4-ls-src-1.png)
+* Note: Create a `.gitignore` file to prevent node_modules from git push to GitHub 
 
 * After *fastify* is installed, the **package.json** will include *fastify*. 
 ![package.json](./images/Step4-package-json.png)
@@ -213,7 +213,7 @@ After=network.target
 Type=notify
 ExecStart=/usr/bin/caddy run --config /etc/caddy/Caddyfile
 ExecReload=/usr/bin/caddy reload --config /etc/caddy/Caddyfile
-	TimeoutStopSec=5
+TimeoutStopSec=5
 KillMode=mixed
 
 [Install]
@@ -232,12 +232,13 @@ WantedBy=multi-user.target
 4. Run `volta install node`
 5. Run `source ~/.bashrc` 
 
-**Screenshots of Node and npm Installation through Volta for Server 1**
 * Repeat the steps for Server 2 
+
+**Screenshots of Node and npm Installation through Volta for Server 1**
 ![Install Volta (1)](./images/Step6-Install-Volta1.png)
 ![Install Volta (2)](./images/Step6-Install-Volta2.png)
 
-* Volta will add 2 lines of code to **.bashrc**, run `vim ~/.bashrc` to see where volta is and where volta will install node and npm. 
+* Volta will add 2 lines of code to **.bashrc**, run `vim ~/.bashrc` to see where volta is and where volta will install node and npm. <br/>
 ![.bashrc](./images/Step6-Bashrc.png)
 
 ---
