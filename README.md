@@ -149,7 +149,7 @@ Note: Instead of visiting the IP address of the droplets, you will visit IP addr
 ![package.json](./images/Step4-package-json.png)
 
 6. Inside the **src** directory, create an **index.js** file with the following content: 
-* Please Note: The **index.js** file requires alteration (2 changes to be changed) <br/>
+* Please Note: The **index.js** file requires alteration (2 changes to be made) <br/>
 Continue the following steps to see code alteration. 
 
 ```JS
@@ -404,9 +404,14 @@ start()
 - **Load Balancer IP Address:** 164.90.245.229 
 * Option 2: Click on the link http://164.90.245.229/ to directly access the browser 
 
-![api Server 1](./images/api1.png)
-![api Server 2](./images/apis2.png)
+2. If everything is configured correctly, clicking reload will switch between the 2 websites. 
+* http://164.90.245.229/ will load between the index.html files from server 1 and server 2 (Refer to the first two screenshots below)
+* http://164.90.245.229/api load between the index.js file, displaying `{ hello: "Server 1" }` or `{ hello: "Server 2" }`
 
 ![html Server 1](./images/server1webimage.png)
 ![html Server 2](./images/server2webimage.png)
+
+![api Server 1](./images/api1.png)
+![api Server 2](./images/apis2.png)
+
 
