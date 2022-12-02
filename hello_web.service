@@ -1,0 +1,17 @@
+[Unit]
+Description=Start node application and restart node application on failure 
+After=network-online.target 
+Wants=network-online.target 
+
+[Service]
+ExecStart=/home/usera/.volta/bin/node /home/usera/src/index.js
+Restart=on-failure
+User=usera
+Group=usera
+RestartSec=10
+TimeoutStopSec=90
+SyslogIdentifier=hello_web
+
+[Install]
+WantedBy=multi-user.target 
+
